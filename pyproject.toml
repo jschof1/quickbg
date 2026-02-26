@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quickbg"
+version = "1.0.0"
+description = "Lightning-fast AI background removal for images - CLI tool for Mac, Linux, and Windows"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Jack", email = "jack@example.com"}
+]
+keywords = ["background", "removal", "ai", "image", "cli", "transparent", "removebg", "rembg"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Graphics :: Graphics Conversion",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "rembg[cli,cpu]>=2.0.0",
+    "pillow>=10.0.0",
+]
+
+[project.optional-dependencies]
+gpu = ["rembg[cli,gpu]>=2.0.0"]
+dev = ["pytest", "pytest-cov", "black", "ruff"]
+
+[project.scripts]
+quickbg = "quickbg.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/jack/quickbg"
+Repository = "https://github.com/jack/quickbg"
+Issues = "https://github.com/jack/quickbg/issues"
+
+[project.license]
+text = "MIT"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+quickbg = ["py.typed"]
+
+[tool.black]
+line-length = 100
+target-version = ['py310']
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
