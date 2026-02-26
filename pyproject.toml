@@ -9,7 +9,7 @@ description = "Lightning-fast AI background removal for images - CLI tool for Ma
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
-    {name = "Jack", email = "jack@example.com"}
+    {name = "Jack Schofield", email = "jack@aspectstudio.net"}
 ]
 keywords = ["background", "removal", "ai", "image", "cli", "transparent", "removebg", "rembg"]
 classifiers = [
@@ -41,9 +41,9 @@ dev = ["pytest", "pytest-cov", "black", "ruff"]
 quickbg = "quickbg.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/jack/quickbg"
-Repository = "https://github.com/jack/quickbg"
-Issues = "https://github.com/jack/quickbg/issues"
+Homepage = "https://github.com/jschof1/quickbg"
+Repository = "https://github.com/jschof1/quickbg"
+Issues = "https://github.com/jschof1/quickbg/issues"
 
 [project.license]
 text = "MIT"

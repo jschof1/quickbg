@@ -11,10 +11,10 @@
   <a href="https://pypi.org/project/quickbg/">
     <img src="https://img.shields.io/pypi/dm/quickbg?color=6328d6&style=flat-square" alt="PyPI Downloads"/>
   </a>
-  <a href="https://github.com/jack/quickbg/blob/main/LICENSE">
+  <a href="https://github.com/jschof1/quickbg/blob/main/LICENSE">
     <img src="https://img.shields.io/pypi/l/quickbg?color=6328d6&style=flat-square" alt="License"/>
   </a>
-  <a href="https://github.com/jack/quickbg/actions">
+  <a href="https://github.com/jschof1/quickbg/actions">
     <img src="https://img.shields.io/github/actions/workflow/status/jack/quickbg/test.yml?color=6328d6&style=flat-square" alt="Build Status"/>
   </a>
   <a href="https://twitter.com/intent/tweet?text=Check+out+QuickBG+-+Lightning-fast+AI+background+removal+for+images+%F0%9F%9A%80&url=https%3A%2F%2Fgithub.com%2Fjack%2Fquickbg">
@@ -99,7 +99,7 @@ pip install quickbg
 ### From Source
 
 ```bash
-git clone https://github.com/jack/quickbg.git
+git clone https://github.com/jschof1/quickbg.git
 cd quickbg
 pip install -e .
 ```
@@ -154,7 +154,7 @@ quickbg -b ./photos/ -a
 
 ```bash
 # Clone the repository
-git clone https://github.com/jack/quickbg.git
+git clone https://github.com/jschof1/quickbg.git
 cd quickbg
 
 # Create virtual environment
@@ -206,5 +206,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <p align="center">
-  Made with ❤️ by <a href="https://github.com/jack">Jack</a>
+  Made with ❤️ by <a href="https://github.com/jschof1">Jack Schofield</a>
 </p>

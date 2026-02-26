@@ -10,7 +10,7 @@ By participating in this project, you agree to abide by our [Code of Conduct](CO
 
 ### Reporting Bugs
 
-Before creating a bug report, please check the [issue tracker](https://github.com/jack/quickbg/issues) to see if the issue has already been reported.
+Before creating a bug report, please check the [issue tracker](https://github.com/jschof1/quickbg/issues) to see if the issue has already been reported.
 
 When creating a bug report, include:
 
@@ -42,7 +42,7 @@ Feature requests are welcome! Please check the existing issues first, then creat
 
 ```bash
 # Clone the repository
-git clone https://github.com/jack/quickbg.git
+git clone https://github.com/jschof1/quickbg.git
 cd quickbg
 
 # Create virtual environment
