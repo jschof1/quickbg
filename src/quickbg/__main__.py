@@ -14,11 +14,17 @@ import os
 from pathlib import Path
 from typing import Optional
 
-from rembg import remove
 from PIL import Image
 
 __version__ = "1.0.0"
 __author__ = "Jack"
+
+
+def remove_background(input_image, alpha_matting: bool = False):
+    """Import rembg lazily so help/version commands stay fast."""
+    from rembg import remove
+
+    return remove(input_image, alpha_matting=alpha_matting)
 
 
 def process_image(input_path: str, output_path: Optional[str] = None, alpha_matting: bool = False) -> bool:
@@ -54,7 +60,7 @@ def process_image(input_path: str, output_path: Optional[str] = None, alpha_matt
         input_image = Image.open(input_file)
         
         # Remove background
-        output_image = remove(input_image, alpha_matting=alpha_matting)
+        output_image = remove_background(input_image, alpha_matting=alpha_matting)
         
         # Save result
         output_image.save(output_path)
@@ -116,7 +122,7 @@ def batch_process(input_dir: str, output_dir: Optional[str] = None, alpha_mattin
         
         try:
             input_image = Image.open(img_path)
-            output_image = remove(input_image, alpha_matting=alpha_matting)
+            output_image = remove_background(input_image, alpha_matting=alpha_matting)
             output_image.save(output_file)
             print("OK")
             success_count += 1

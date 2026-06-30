@@ -1,0 +1,23 @@
+{
+  "skill_name": "quickbg",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "quickbg this product photo and put the output next to it",
+      "expected_output": "Agent uses the rembg-based quickbg command, writes an explicit output path, and verifies the PNG exists.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "batch run quick bg on this folder locally, no api",
+      "expected_output": "Agent uses quickbg batch mode, not bgremove-api, and reports the output folder.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "is quickbg connected to my github repo?",
+      "expected_output": "Agent checks /Users/jack/Documents/GitHub/quickbg remotes and distinguishes it from bgremove-api.",
+      "files": []
+    }
+  ]
+}

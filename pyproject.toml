@@ -45,9 +45,6 @@ Homepage = "https://github.com/jschof1/quickbg"
 Repository = "https://github.com/jschof1/quickbg"
 Issues = "https://github.com/jschof1/quickbg/issues"
 
-[project.license]
-text = "MIT"
-
 [tool.setuptools.packages.find]
 where = ["src"]
 
